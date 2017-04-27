@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/map_type" android:title="Map Type"
+        android:orderInCategory="1">
+        <menu>
+            <group>
+                <item android:title="Normal" android:id="@+id/narmal"></item>
+                <item android:title="Terrain" android:id="@+id/terrain"></item>
+                <item android:title="Hybrid" android:id="@+id/hybrid"></item>
+                <item android:title="Satilite" android:id="@+id/satilite"></item>
+            </group>
+        </menu>
+
+    </item>
+</menu>
