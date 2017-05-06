@@ -3,6 +3,7 @@ package com.example.gowsik.working.recyclerview;
 import android.content.ClipData;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,6 +41,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemHolder> {
 
     @Override
     public int getItemCount() {
+        Log.d("Item Size ",""+itemsList.size());
         return itemsList.size();
     }
 

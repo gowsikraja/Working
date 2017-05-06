@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="image_req"
+    tools:context="com.example.gowsik.working.activities.VolleyActivty">
+
+    <Button
+        android:id="@+id/simple_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="String Request"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="26dp" />
+    <Button
+        android:id="@+id/image_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Request"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/simple_string"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="26dp" />
+    <Button
+        android:id="@+id/json_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Json Request"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/image_req"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="26dp" />
+    <Button
+        android:id="@+id/json_array_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Json Array Request"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/json_req"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="26dp" />
+    <Button
+        android:id="@+id/send_json_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Data to server"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/json_array_req"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="26dp" />
+    <Button
+        android:id="@+id/login_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/send_json_data"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="26dp" />
+</RelativeLayout>

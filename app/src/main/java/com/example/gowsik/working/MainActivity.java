@@ -9,11 +9,13 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.crashlytics.android.Crashlytics;
 import com.example.gowsik.working.activities.MapActivity;
 import com.example.gowsik.working.recyclerview.ItemAdapter;
 import com.example.gowsik.working.recyclerview.Items;
 import com.example.gowsik.working.recyclerview.RecycleViewListener;
 
+import io.fabric.sdk.android.Fabric;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,13 +24,14 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView list;
     private ItemAdapter adapter;
     private Items items;
-    String title[]={"Map Working"};
-    String classNames[]={"MapActivity"};
+    String title[]={"Map Working","Fabric Crash Report","Firebase working","Volley working"};
+    String classNames[]={"MapActivity","FabricCrash","FirebaseActivity","VolleyActivty"};
     List<Items> itemList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
         list=(RecyclerView)findViewById(R.id.list);
         itemList=new ArrayList<>();

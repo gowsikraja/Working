@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Working</string>
     <string name="title_activity_map">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="server_url">http://192.168.1.7:1234/Volley/</string>
 </resources>
